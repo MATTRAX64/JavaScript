@@ -1,3 +1,3 @@
--[x] code javascript qui change la couleur de fond de la page courant
--[x] changer le site
--[ ] afficher un message d'alerte quand on appuie sur le bouton 
+-	[x] code javascript qui change la couleur de fond de la page courant
+-	[x] changer le site
+-	[ ] afficher un message d'alerte quand on appuie sur le bouton
