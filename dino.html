@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>page de test JS</title>
+	<script type="text/javascript">
+    // Ici on definit une fonction JavaScript
+    function changerDimensionX(image,dimensionX) {
+	  if (dimensionX) {
+		image.width=dimensionX;
+			}
+		else{
+			alert ("pensez \u00E0 saisir une largeur");
+		}
+    }
+	function changerDimensionY(image,dimensionY) {
+	  if (dimensionY) {
+		image.height=dimensionY;
+			}
+		else{
+			alert ("pensez \u00E0 saisir une hauteur");
+		}
+    }
+    function changerDimensionXY(image,dimensionX,dimensionY) {
+      if (dimensionX) {
+		image.width=dimensionX;
+		}
+	else {
+		alert ("pensez \u00E0 saisir une largeur");
+		}
+      if (dimensionY) {
+		image.height=dimensionY;
+		}
+	else {
+		alert ("pensez \u00E0 saisir une hauteur");
+		}
+    }
+    </script>
+</head>
+<body>
+	<h1>Modifier dimensions d'une image</h1>
+	<p>Saisir ci dessous de nouvelles dimensions et cliquer sur changer largeur ou hauteur.</p>
+	<img name ="imageDino" src="images/dino1.png" width="500" height="400">
+	<BR>
+	<input type="text" id="largeur" maxlength="3" size="3">
+	<button onclick="changerDimensionX(imageDino, largeur.value);">changer largeur</button>
+    <input type="text" id="hauteur" maxlength="3" size="3">
+	<button onclick="changerDimensionY(imageDino, hauteur.value);">changer hauteur</button>
+	<button onclick="changerDimensionXY(imageDino, largeur.value, hauteur.value);">changer largeur et hauteur</button>
+</body>
+</html>
