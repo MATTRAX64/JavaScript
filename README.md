@@ -3,5 +3,5 @@ c'est un site qui change le temps de nuit a jour tout en changant l'heure et le 
 -  [x] mettre l'heure
 -  [x] changer le lien de photo
 
-rajouter une photo redimentionable avec des boutton et du texte
+rajouter une photo redimentionable avec des bouttons et du textes
 -  [ ] changer la taille de la photo
