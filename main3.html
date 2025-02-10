@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site java script</title>
+    
+</head>
+<body>
+    <h1><header>bonjour</header></h1>
+    <h2>Time:null</h2>
+    <input type="submit" value="changer Temps">
+    <br><h3>
+        <a href="https://www.shutterstock.com/image-photo/black-man-call-center-phone-260nw-2310803487.jpg">tu fait quoi la ?</a>
+    <script>
+        function Time(){
+            var time = new Date();
+            var Heure = time.getHours().toString();
+            var Minute = time.getMinutes()
+            if (Minute < 10) {
+                document.querySelector("h2").textContent = Heure +"h0"+ Minute.toString();
+            } else {
+                document.querySelector("h2").textContent = Heure +"h"+ Minute.toString();
+            }
+            console.warn("Time Changed !")
+            style();//changer style du site
+        }
+        function style(){
+            if (document.querySelector("header").style.color == "black")  {
+                document.querySelector("header").style.color="white";
+                document.querySelector("header").textContent = "Bonne nuit ..."
+                document.querySelector("h2").style.color="white";
+                document.querySelector("a").textContent = "dodo";
+                document.querySelector("a").href = "https://youmatter.world/app/uploads/2015/11/Travailler-moins-produire-plus-.jpg";
+                document.body.style.background="black";
+                //alert("Mode Nuit Activé");
+            } else {
+                document.querySelector("header").style.color="black";
+                document.querySelector("h2").style.color="black";
+                document.querySelector("header").textContent = "Bonjour !"
+                document.querySelector("a").textContent = "TraVAilLE";
+                document.querySelector("a").href = "https://www.shutterstock.com/image-photo/black-man-call-center-phone-260nw-2310803487.jpg";
+                document.body.style.background="white";
+                //alert("Mode Jour Activé");
+            }
+        }
+        document.querySelector("input").addEventListener("click",Time)
+        Time();
+    </script>
+</body>
+</html>
